@@ -1,0 +1,115 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #1a73e8, #4fc3f7);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+header a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+h2 {
+    margin-top: 40px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.cert-badges {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.cert-badges img {
+    height: 60px;
+    transition: transform 0.2s ease;
+}
+.cert-badges img:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.download-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background: #0c54b8;
+}
+
+#toggle-theme {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #eee;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
