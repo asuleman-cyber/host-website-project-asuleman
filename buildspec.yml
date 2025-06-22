@@ -1,13 +1,13 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: 14 # Optional if you don't need Node.js
   build:
     commands:
-      - echo "Nothing to build for static HTML"
+      - echo "Building site..."
+      - mkdir dist
+      - cp adam_suleman_cv.html dist/
+
 artifacts:
   files:
     - '**/*'
-  base-directory: . # deploy everything from root
+  base-directory: dist
