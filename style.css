@@ -1,49 +1,66 @@
-
+/* Base layout and typography */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f3f4f6;
-    color: #333;
+    background-color: #f5f9ff;
+    color: #1a1a1a;
     margin: 0;
     padding: 0;
-    transition: background 0.3s, color 0.3s;
-}
-
-.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 960px;
     margin: 40px auto;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
 }
 
+/* Header styling */
 header {
     text-align: center;
     background: linear-gradient(135deg, #1a73e8, #4fc3f7);
     color: white;
-    padding: 40px 20px;
-    border-radius: 12px;
+    padding: 60px 20px;
+    border-radius: 18px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 6px 0;
+    font-size: 1.1rem;
 }
 
 header a {
     color: #fff;
-    margin: 0 5px;
+    margin: 0 10px;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
+/* Profile Picture */
 .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 180px; /* increased from 120px */
+    height: 180px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     object-fit: cover;
-    border: 3px solid white;
+    border: 5px solid white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
 }
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
 
 h2 {
     margin-top: 40px;
@@ -60,30 +77,10 @@ h2 {
     margin: 15px 0;
 }
 
-.cert-badges img {
-    height: 60px;
-    transition: transform 0.2s ease;
-}
-.cert-badges img:hover {
-    transform: scale(1.1);
-}
-
+/* Lists and badges */
 ul {
     padding-left: 20px;
-    line-height: 1.6;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    margin-bottom: 30px;
 }
 
 .cert-badges {
@@ -110,30 +107,61 @@ section {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+
+/* Call-to-action button */
 .download-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background: #1a73e8;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 22px;
     border-radius: 30px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     font-weight: bold;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    transition: background 0.3s ease;
 }
 
 .download-btn:hover {
     background: #0c54b8;
 }
 
+/* Toggle dark mode */
 #toggle-theme {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    background: #eee;
+    background: #e6f0ff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 30px;
     cursor: pointer;
+    color: #1a73e8;
+    font-weight: bold;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.dark-mode {
+    background-color: #111827;
+    color: #d1d5db;
+}
+
+.dark-mode .container {
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+.dark-mode header {
+    background: linear-gradient(135deg, #1a73e8, #3b82f6);
+}
+
+.dark-mode .download-btn {
+    background: #3b82f6;
+}
+
+.dark-mode #toggle-theme {
+    background: #374151;
+    color: white;
 }
