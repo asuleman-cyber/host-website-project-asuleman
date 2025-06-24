@@ -165,3 +165,16 @@ ul {
     background: #374151;
     color: white;
 }
+
+#visitor-count {
+    font-weight: bold;
+    color: #1a73e8;
+    font-size: 1.2rem;
+  }
+  
+  p.visitor-info {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  

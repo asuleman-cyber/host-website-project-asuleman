@@ -117,6 +117,25 @@
       }
     });
   </script>
+
+<script>
+  const apiUrl = 'https://5r8853u0i4.execute-api.eu-west-2.amazonaws.com/prod/count';
+
+  async function fetchVisitorCount() {
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      document.getElementById('visitor-count').textContent = data.count;
+    } catch (error) {
+      console.error('Failed to fetch visitor count:', error);
+    }
+  }
+
+  fetchVisitorCount();
+</script>
+
+<p class="visitor-info">Visitor Count: <span id="visitor-count">Loading...</span></p>
+
   
 </body>
 </html>
