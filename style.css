@@ -107,6 +107,60 @@ ul {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+<!-- SKILLS -->
+<section>
+  <h2><i class="fa-solid fa-list-check"></i> Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-category">
+      <h3>Cloud & Security</h3>
+      <div class="skill-badges">
+        <span>Azure</span>
+        <span>AWS</span>
+        <span>MITRE ATT&CK</span>
+        <span>NIST Frameworks</span>
+        <span>KQL</span>
+        <span>Log Analysis</span>
+        <span>Incident Monitoring</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Technical Operations</h3>
+      <div class="skill-badges">
+        <span>Workflow Optimisation</span>
+        <span>AI Workflow Automation</span>
+        <span>Escalation Management</span>
+        <span>KPI Reporting</span>
+        <span>Process Design</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Customer & Communication</h3>
+      <div class="skill-badges">
+        <span>High-Volume Operational Support</span>
+        <span>Cross-Team Collaboration</span>
+        <span>Escalation Handling</span>
+        <span>SOP Implementation</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Systems & Tools</h3>
+      <div class="skill-badges">
+        <span>Windows</span>
+        <span>macOS</span>
+        <span>Linux</span>
+        <span>Zapier</span>
+        <span>Zendesk</span>
+        <span>Stripe</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 /* Call-to-action button */
 .download-btn {
