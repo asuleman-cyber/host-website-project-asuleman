@@ -107,60 +107,44 @@ ul {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
-<!-- SKILLS -->
-<section>
-  <h2><i class="fa-solid fa-list-check"></i> Skills</h2>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
 
-  <div class="skills-grid">
+.skill-category h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+}
 
-    <div class="skill-category">
-      <h3>Cloud & Security</h3>
-      <div class="skill-badges">
-        <span>Azure</span>
-        <span>AWS</span>
-        <span>MITRE ATT&CK</span>
-        <span>NIST Frameworks</span>
-        <span>KQL</span>
-        <span>Log Analysis</span>
-        <span>Incident Monitoring</span>
-      </div>
-    </div>
+.skill-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 
-    <div class="skill-category">
-      <h3>Technical Operations</h3>
-      <div class="skill-badges">
-        <span>Workflow Optimisation</span>
-        <span>AI Workflow Automation</span>
-        <span>Escalation Management</span>
-        <span>KPI Reporting</span>
-        <span>Process Design</span>
-      </div>
-    </div>
+.skill-badges span {
+  background: #f2f4f8;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #e0e4ea;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s ease;
+}
 
-    <div class="skill-category">
-      <h3>Customer & Communication</h3>
-      <div class="skill-badges">
-        <span>High-Volume Operational Support</span>
-        <span>Cross-Team Collaboration</span>
-        <span>Escalation Handling</span>
-        <span>SOP Implementation</span>
-      </div>
-    </div>
+.skill-badges span i {
+  font-size: 0.95em;
+}
 
-    <div class="skill-category">
-      <h3>Systems & Tools</h3>
-      <div class="skill-badges">
-        <span>Windows</span>
-        <span>macOS</span>
-        <span>Linux</span>
-        <span>Zapier</span>
-        <span>Zendesk</span>
-        <span>Stripe</span>
-      </div>
-    </div>
-
-  </div>
-</section>
+.skill-badges span:hover {
+  background: #e6ecf5;
+  transform: translateY(-2px);
+}
 
 /* Call-to-action button */
 .download-btn {
