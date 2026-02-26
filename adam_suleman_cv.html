@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adam Suleman – Resume</title>
+  <title>Adam Suleman</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -238,8 +238,7 @@
     <article class="card">
       <h3>Security Blue Team – Faces of SBT</h3>
       <p>
-        Featured as a Student Support Lead, sharing my experience supporting learners and growing into
-        cloud/security work.
+        Featured as the Student Support Lead, sharing my experience whilst growing into my leadership role
       </p>
       <a
         href="https://www.securityblue.team/blog/posts/faces-of-sbt-adam-student-support-lead"
@@ -290,26 +289,6 @@
         localStorage.setItem('theme', 'light');
       }
     });
-  </script>
-
-<script>
-  const apiUrl = 'https://5r8853u0i4.execute-api.eu-west-2.amazonaws.com/prod/count';
-
-  async function fetchVisitorCount() {
-    try {
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      document.getElementById('visitor-count').textContent = data.count;
-    } catch (error) {
-      console.error('Failed to fetch visitor count:', error);
-    }
-  }
-
-  fetchVisitorCount();
-</script>
-
-<p class="visitor-info">Visitor Count: <span id="visitor-count">Loading...</span></p>
-
-  
+  </script>  
 </body>
 </html>
