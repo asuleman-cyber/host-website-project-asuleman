@@ -197,6 +197,19 @@ ul {
   }
 </style>
 
+/* Education Section */
+.edu-item {
+  margin-bottom: 1.5rem;
+}
+
+.edu-item h3 {
+  margin-bottom: 0.3rem;
+}
+
+.edu-item p {
+  margin: 0;
+  opacity: 0.9;
+}
 
 
 /* Call-to-action button */
