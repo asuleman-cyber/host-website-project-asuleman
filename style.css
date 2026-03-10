@@ -199,6 +199,41 @@ ul {
   text-decoration: none;
 }
 
+
+.section.featured h2 {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+}
+
+.card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.card p {
+  margin: 0 0 0.85rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.card a {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .card a:hover {
   text-decoration: underline;
 }
@@ -313,4 +348,3 @@ p.visitor-info {
     transform: none;
   }
 }
-
